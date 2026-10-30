@@ -1,0 +1,38 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}CareerCraft AI{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="{% url 'home' %}" class="logo">
+            ResumeCraft<span> AI</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="{% url 'builder' %}">Build Resume</a>
+            <a href="{% url 'analyzer' %}">AI Analyzer</a>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 CareerCraft AI. Built for your career journey.</p>
+    </footer>
+
+</body>
+</html>

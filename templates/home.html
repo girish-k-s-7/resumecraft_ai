@@ -1,0 +1,122 @@
+
+{% extends "base.html" %}
+
+{% block title %}CareerCraft AI | Your Resume Toolkit{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">YOUR CAREER STARTS HERE</span>
+
+        <h1>
+            Build a Resume That
+            <span>Opens Doors.</span>
+        </h1>
+
+        <p class="hero-description">
+            Create professional resumes and use AI-powered analysis
+            to understand how well your resume matches your dream job.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{% url 'builder' %}" class="btn btn-primary">
+                Build My Resume
+            </a>
+
+            <a href="{% url 'analyzer' %}" class="btn btn-secondary">
+                Analyze My Resume
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <div class="section-heading">
+        <span class="eyebrow">WHAT CAN YOU DO?</span>
+        <h2>Your Resume Toolkit</h2>
+        <p>Everything you need to prepare for your next opportunity.</p>
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">📄</div>
+
+            <h3>Build Your Resume</h3>
+
+            <p>
+                Create a professional resume using our simple
+                resume builder. Preview your details and download
+                your resume as a PDF.
+            </p>
+
+            <a href="{% url 'builder' %}" class="feature-link">
+                Start Building →
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🤖</div>
+
+            <h3>AI Resume Analyzer</h3>
+
+            <p>
+                Upload your existing resume and paste a job description.
+                Let AI identify matching skills and areas that need improvement.
+            </p>
+
+            <a href="{% url 'analyzer' %}" class="feature-link">
+                Analyze Resume →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="how-it-works">
+
+    <div class="section-heading">
+        <span class="eyebrow">SIMPLE PROCESS</span>
+        <h2>Prepare. Analyze. Improve.</h2>
+    </div>
+
+    <div class="steps-grid">
+
+        <div class="step">
+            <span>01</span>
+            <h3>Create</h3>
+            <p>Build your resume with our professional template.</p>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <h3>Analyze</h3>
+            <p>Compare your resume against your target job description.</p>
+        </div>
+
+        <div class="step">
+            <span>03</span>
+            <h3>Improve</h3>
+            <p>Understand the gaps and improve your resume.</p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
